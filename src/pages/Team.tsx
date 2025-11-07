@@ -5,10 +5,10 @@ import React from 'react';
 import placeholder from '../assets/team/placeholder.jpg';
 
 /* Core Team */
-import saileshPatil from '../assets/team/sailesh-patil.jpg';
-import sureshHadpad from '../assets/team/suresh-hadpad.jpg';
-import revansiddayaHiremath from '../assets/team/revansiddaya-hiremath.jpg';
-import virupakshaSir from '../assets/team/virupaksha-sir.jpg';
+//import saileshPatil from '../assets/team/sailesh-patil.jpg';
+//import sureshHadpad from '../assets/team/suresh-hadpad.jpg';
+//import revansiddayaHiremath from '../assets/team/revansiddaya-hiremath.jpg';
+//import virupakshaSir from '../assets/team/virupaksha-sir.jpg';
 
 /* Cultural Team */
 import smtDhaneshwariPatil from '../assets/team/Smt dhaneshwari patil.jpg';
@@ -24,9 +24,9 @@ import smtChennammaHiremath from '../assets/team/Smt Chennamma Hiremath.jpg';
 import smtSandhyaGanesh from '../assets/team/Smt.Sandhya ganesh.jpg';
 
 /* Senior Members / Ex-Presidents */
-import basavarajNaik from '../assets/team/basavaraj-naik.jpg';
-import shivannaDesai from '../assets/team/shivanna-desai.jpg';
-import rameshKulkarni from '../assets/team/ramesh-kulkarni.jpg';
+//import basavarajNaik from '../assets/team/basavaraj-naik.jpg';
+//import shivannaDesai from '../assets/team/shivanna-desai.jpg';
+//import rameshKulkarni from '../assets/team/ramesh-kulkarni.jpg';
 
 // --- types & helpers for Team.tsx ---
 type Member = {
@@ -42,10 +42,10 @@ const getImg = (img?: string): string => img || placeholder;
 
 const OurTeam = () => {
   const coreTeam = [
-    { name: 'Sailesh Patil', role: 'President', img: saileshPatil },
-    { name: 'Suresh Hadpad', role: 'President', img: sureshHadpad },
-    { name: 'Revansiddaya Hiremath', role: 'Secretary', img: revansiddayaHiremath },
-    { name: 'Virupaksha Sir', role: 'Advisor', img: virupakshaSir },
+    //{ name: 'Sailesh Patil', role: 'President', img: saileshPatil },
+    //{ name: 'Suresh Hadpad', role: 'President', img: sureshHadpad },
+    //{ name: 'Revansiddaya Hiremath', role: 'Secretary', img: revansiddayaHiremath },
+    //{ name: 'Virupaksha Sir', role: 'Advisor', img: virupakshaSir },
   ];
 
 const culturalTeam = [
@@ -71,9 +71,9 @@ const culturalTeam = [
 
 
   const seniorMembers = [
-    { name: 'Basavaraj Naik', role: 'Ex-President', img: basavarajNaik },
-    { name: 'Shivanna Desai', role: 'Ex-President', img: shivannaDesai },
-    { name: 'Ramesh Kulkarni', role: 'Ex-President', img: rameshKulkarni },
+   // { name: 'Basavaraj Naik', role: 'Ex-President', img: basavarajNaik },
+   // { name: 'Shivanna Desai', role: 'Ex-President', img: shivannaDesai },
+   // { name: 'Ramesh Kulkarni', role: 'Ex-President', img: rameshKulkarni },
   ];
 
   
