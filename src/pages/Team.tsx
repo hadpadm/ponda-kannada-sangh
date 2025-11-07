@@ -18,7 +18,7 @@ import smtRashmiShetty from '../assets/team/Smt rashmi Shetty.jpg';
 import smtSeemaPrasad from '../assets/team/Smt Seema Prasad.jpg';
 import smtShailajaKanavi from '../assets/team/Smt Shailaja kanavi.jpg';
 import smtShardhaManirakar from '../assets/team/Smt Shardha manirakar.jpg';
-import smtSmithiaShirganavar from '../assets/team/Smt Smitha Shirganavar.jpg';
+import smtSmithaShirganavar from '../assets/team/smt-smitha-shirganavar.jpg';
 import smtSujataPattar from '../assets/team/Smt Sujata Pattar.jpg';
 import smtChennammaHiremath from '../assets/team/Smt Chennamma Hiremath.jpg';
 import smtSandhyaGanesh from '../assets/team/Smt.Sandhya ganesh.jpg';
@@ -58,7 +58,7 @@ const culturalTeam = [
   { name: 'Smt. Sujata Pattar', role: 'Cultural Committee Member', img: smtSujataPattar },
   { name: 'Smt. Rashmi Shetty', role: 'Cultural Committee Member', img: smtRashmiShetty },
   { name: 'Smt. Chennamma Hiremath', role: 'Cultural Committee Member', img: smtChennammaHiremath },
-  { name: 'Smt. Smitha Shirganavar', role: 'Cultural & Core Committee Member', img: smtSmithiaShirganavar },
+  { name: 'Smt. Smitha Shirganavar', role: 'Cultural & Core Committee Member', img: smtSmithaShirganavar },
  // { name: 'Shri. Vinayak Talwar', role: 'Cultural Committee Member', img: vinayakTalwar }, // no image yet
   { name: 'Smt. Seema Prasad', role: 'Cultural Committee Member', img: smtSeemaPrasad },
   { name: 'Smt. Shailaja Kanavi', role: 'Cultural Committee Member', img: smtShailajaKanavi },
