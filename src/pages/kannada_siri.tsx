@@ -2,7 +2,7 @@ import React from "react";
 
 const KannadaSiri = () => {
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mx-auto px-4 py-16" id="kannada-siri">
       {/* 🌄 Hero Section */}
       <div className="relative w-full h-80 md:h-[400px] mb-12 rounded-lg overflow-hidden shadow-lg">
         <img

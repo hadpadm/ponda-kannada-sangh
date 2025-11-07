@@ -1,3 +1,4 @@
+// src/pages/Home.tsx
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -16,7 +17,7 @@ import hero6 from '../assets/hero_banner6.jpg';
 
 const images = [hero1, hero2, hero3, hero4, hero5, hero6];
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <div className="bg-blue-50">
       {/* Hero Banner with background image slideshow */}
@@ -63,24 +64,39 @@ const Home = () => {
       {/* Static Cards Section */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <img src={hero4} alt="Cultural Events" className="w-full h-48 object-cover" />
+          {/* 🎭 Cultural Events → Photos page */}
+          <Link
+            to="/photos"
+            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:-translate-y-1 transition duration-300 block"
+          >
+            <img
+              src={hero4}
+              alt="Cultural Events"
+              className="w-full h-48 object-cover"
+            />
             <div className="p-6">
-              <h3 className="text-2xl font-semibold text-blue-800 mb-4">Cultural Events</h3>
+              <h3 className="text-2xl font-semibold text-blue-800 mb-4">
+                Cultural Events
+              </h3>
               <p className="text-blue-600">
-                Experience heart-warming Cultural activities by all proud Kannadigas.
+                Experience heart-warming cultural activities by all proud Kannadigas.
               </p>
             </div>
-          </div>
+          </Link>
 
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          {/* 📰 Updates → Updates page */}
+          <Link
+            to="/updates"
+            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transform hover:-translate-y-1 transition duration-300 block"
+          >
             <img src={hero5} alt="Updates" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h3 className="text-2xl font-semibold text-blue-800 mb-4">Updates</h3>
               <p className="text-blue-600">Stay tuned with us.</p>
             </div>
-          </div>
+          </Link>
 
+          {/* 📢 Notice (not linked yet) */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img src={hero6} alt="Notice" className="w-full h-48 object-cover" />
             <div className="p-6">
