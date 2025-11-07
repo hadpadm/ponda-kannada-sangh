@@ -23,7 +23,7 @@ const Photos = () => {
 
   const [currentSlide, setCurrentSlide] = useState([0, 0, 0]);
 
-  const handleNext = (index) => {
+  const handleNext = (index: number) => {
     setCurrentSlide((prev) => {
       const newSlides = [...prev];
       newSlides[index] = (newSlides[index] + 1) % slides[index].length;
@@ -31,7 +31,7 @@ const Photos = () => {
     });
   };
 
-  const handlePrev = (index) => {
+  const handlePrev = (index: number) => {
     setCurrentSlide((prev) => {
       const newSlides = [...prev];
       newSlides[index] = (newSlides[index] - 1 + slides[index].length) % slides[index].length;

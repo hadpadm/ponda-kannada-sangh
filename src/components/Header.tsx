@@ -34,19 +34,19 @@ const Header = () => {
         >
           <ul className="flex flex-col md:flex-row md:space-x-6 text-center md:text-left">
             <li>
-              <Link to="/" className="block py-2 md:py-0 hover:text-blue-200" onClick={() => setMenuOpen(false)}>Home</Link>
+              <Link to="/home" className="block py-2 md:py-0 hover:text-blue-200" onClick={() => setMenuOpen(false)}>Home</Link>
             </li>
             <li>
-              <Link to="/itinerary" className="block py-2 md:py-0 hover:text-blue-200" onClick={() => setMenuOpen(false)}>About</Link>
+              <Link to="/about" className="block py-2 md:py-0 hover:text-blue-200" onClick={() => setMenuOpen(false)}>About</Link>
             </li>
             <li>
-              <Link to="/blog" className="block py-2 md:py-0 hover:text-blue-200" onClick={() => setMenuOpen(false)}>Photos</Link>
+              <Link to="/photos" className="block py-2 md:py-0 hover:text-blue-200" onClick={() => setMenuOpen(false)}>Photos</Link>
             </li>
             <li>
-              <Link to="/shop" className="block py-2 md:py-0 hover:text-blue-200" onClick={() => setMenuOpen(false)}>Kannada Siri</Link>
+              <Link to="/kannada_siri" className="block py-2 md:py-0 hover:text-blue-200" onClick={() => setMenuOpen(false)}>Kannada Siri</Link>
             </li>
             <li>
-              <Link to="/reviews" className="block py-2 md:py-0 hover:text-blue-200" onClick={() => setMenuOpen(false)}>Updates</Link>
+              <Link to="/updates" className="block py-2 md:py-0 hover:text-blue-200" onClick={() => setMenuOpen(false)}>Updates</Link>
             </li>
             <li>
               <Link to="/team" className="block py-2 md:py-0 hover:text-blue-200" onClick={() => setMenuOpen(false)}>Our Team</Link>

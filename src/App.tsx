@@ -1,38 +1,35 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Itinerary from './pages/about';
-import TropicalParadise from './pages/TropicalParadise';
-import MountainTrekking from './pages/MountainTrekking';
-import AfricanSafari from './pages/AfricanSafari';
-import EuropeanCityHopping from './pages/EuropeanCityHopping';
-import Blog from './pages/Photos';
-import Shop from './pages/kannada_siri';
-import Reviews from './pages/Reviews';
+import About from './pages/About';
+import Kannada_Siri from './pages/Kannada_Siri';  // ✅ fixed here
+import Photos from './pages/Photos';
+import Updates from './pages/Updates';
 import Team from './pages/Team';
 
+
 function App() {
+  // ✅ define this outside JSX
+  const isDev = import.meta.env.MODE === 'development';
+
   return (
-    <Router>
+    <Router basename={isDev ? '/' : '/ponda-kannada-sangh'}>
       <div className="min-h-screen bg-blue-50 flex flex-col">
         <Header />
         <main className="flex-grow">
           <Routes>
-            {/* Default landing page */}
-            <Route path="/" element={<Home />} />
+            {/* Redirect root to /home */}
+            <Route path="/" element={<Navigate to="/home" replace />} />
+            <Route path="/home" element={<Home />} />
 
             {/* Other pages */}
-            <Route path="/itinerary" element={<Itinerary />} />
-            <Route path="/itinerary/tropical-paradise" element={<TropicalParadise />} />
-            <Route path="/itinerary/mountain-trekking" element={<MountainTrekking />} />
-            <Route path="/itinerary/african-safari" element={<AfricanSafari />} />
-            <Route path="/itinerary/european-city-hopping" element={<EuropeanCityHopping />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/shop" element={<Shop />} />
-            <Route path="/reviews" element={<Reviews />} />
-            <Route path="/team" element={<Team />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/kannada_siri" element={<Kannada_Siri />} />
+            <Route path="/Photos" element={<Photos />} />
+            <Route path="/Updates" element={<Updates />} />
+            <Route path="/Team" element={<Team />} />
           </Routes>
         </main>
         <Footer />

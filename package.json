@@ -1,5 +1,5 @@
 {
-  "homapage": "https://hadpadm.github.io/",
+  "homepage": "https://hadpadm.github.io/ponda-kannada-sangh/",
   "name": "Ponda-kannada-sangha",
   "private": true,
   "version": "0.1.0",
@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && npx gh-pages -d dist -b gh-pages --dotfiles -f"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
