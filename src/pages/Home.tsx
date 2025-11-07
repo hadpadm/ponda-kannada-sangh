@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 
@@ -38,15 +39,21 @@ const Home = () => {
                 <h1 className="text-5xl font-bold mb-6">
                   Welcome to Ponda Kannada Sangha
                 </h1>
-                <p className="text-xl mb-8">
+
+                {/* 10% smaller and slightly transparent */}
+                <p className="text-lg mb-8 text-white/80">
                   Ponda Kannada Sangh is a cultural organization dedicated to promoting Kannada language, culture, and heritage in Ponda.
                 </p>
-                <a
-                  href="/itinerary"
+
+                {/* Use react-router Link to navigate to the Kannada Siri route */}
+                <Link
+                  to="/kannada_siri"
                   className="bg-blue-600 text-white px-6 py-3 rounded-full inline-flex items-center hover:bg-blue-700 transition duration-300"
+                  aria-label="Dive Into Kannada Legacy"
                 >
-                  Dive Into Kannada Legacy<ArrowRight className="ml-2" />
-                </a>
+                  Dive Into Kannada Legacy
+                  <ArrowRight className="ml-2" />
+                </Link>
               </div>
             </div>
           </SwiperSlide>
