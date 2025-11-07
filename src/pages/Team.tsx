@@ -1,47 +1,41 @@
-// src/components/OurTeam.jsx
+// src/pages/Team.tsx
 import React from 'react';
-
-// Placeholder (must exist at src/assets/team/placeholder.jpg)
 import placeholder from '../assets/team/placeholder.jpg';
 
-/* Core Team */
-// (commented out — add image files & imports later if needed)
-// import saileshPatil from '../assets/team/sailesh-patil.jpg';
-// import sureshHadpad from '../assets/team/suresh-hadpad.jpg';
-// import revansiddayaHiremath from '../assets/team/revansiddaya-hiremath.jpg';
-// import virupakshaSir from '../assets/team/virupaksha-sir.jpg';
+/* Cultural Team images */
+import smtDhaneshwariPatil from '../assets/team/smt-dhaneshwari-patil.jpg';
+import smtMahalaxmiNaveen from '../assets/team/smt-mahalaxmi-naveen.jpg';
+import smtNandiniKanbur from '../assets/team/smt-nandini-kanbur.jpg';
+import smtRashmiShetty from '../assets/team/smt-rashmi-shetty.jpg';
+import smtSeemaPrasad from '../assets/team/smt-seema-prasad.jpg';
+import smtShailajaKanavi from '../assets/team/smt-shailaja-kanavi.jpg';
+import smtShardhaManirakar from '../assets/team/smt-shardha-manirakar.jpg';
+import smtSmithaShirgannavar from '../assets/team/smt-smitha-shirgannavar.jpg';
+import smtSujataPattar from '../assets/team/smt-sujata-pattar.jpg';
+import smtChennammaHiremath from '../assets/team/smt-chennamma-hiremath.jpg';
+import smtSandhyaGanesh from '../assets/team/smt-sandhya-ganesh.jpg';
 
-/* Cultural Team - imports match filenames shown in your screenshot */
-import smtDhaneshwariPatil from '../assets/team/Smt dhaneshwari patil.jpg';
-import smtMahalaxmiNaveen from '../assets/team/Smt mahalaxmi Naveen.jpg';
-import smtNandiniKanbur from '../assets/team/Smt Nandini kanbur.jpg';
-import smtRashmiShetty from '../assets/team/Smt rashmi Shetty.jpg';
-import smtSeemaPrasad from '../assets/team/Smt Seema Prasad.jpg';
-import smtShailajaKanavi from '../assets/team/Smt Shailaja kanavi.jpg';
-import smtShardhaManirakar from '../assets/team/Smt Shardha manirakar.jpg';
-import smtSmithaShirganavar from '../assets/team/Smt Smitha Shirganavar.jpg';
-import smtSujataPattar from '../assets/team/Smt Sujata Pattar.jpg';
-import smtChennammaHiremath from '../assets/team/Smt.Chennamma Hiremath.jpg';
-import smtSandhyaGanesh from '../assets/team/Smt.Sandhya ganesh.jpg';
-/* team meeting images (if you want to show them anywhere) */
-import teamMeeting1 from '../assets/team/team meeting1.jpg';
-import teamMeeting2 from '../assets/team/team meeting2.jpg';
+/* Optional meeting images */
+import teamMeeting1 from '../assets/team/team-meeting1.jpg';
+import teamMeeting2 from '../assets/team/team-meeting2.jpg';
 
-/* Senior Members / Ex-Presidents */
-// import basavarajNaik from '../assets/team/basavaraj-naik.jpg';
-// import shivannaDesai from '../assets/team/shivanna-desai.jpg';
-// import rameshKulkarni from '../assets/team/ramesh-kulkarni.jpg';
+// --- types ---
+interface Member {
+  name: string;
+  role: string;
+  img?: string;
+}
 
-// fallback-safe helper: typed param to avoid "any" warning
-const getImg = (img) => (img ? img : placeholder);
+// --- helper ---
+const getImg = (img?: string): string => img ?? placeholder;
 
-const OurTeam = () => {
-  const coreTeam = [
-    // Add core team members here when you have their images
+// --- component ---
+const OurTeam: React.FC = () => {
+  const coreTeam: Member[] = [
     // { name: 'Shri. Sailesh Patil', role: 'President', img: saileshPatil },
   ];
 
-  const culturalTeam = [
+  const culturalTeam: Member[] = [
     { name: 'Smt. Mahalaxmi Naveen', role: 'Stage & Event Coordinator', img: smtMahalaxmiNaveen },
     { name: 'Smt. Sandhya Ganesh', role: 'Stage & Event Coordinator', img: smtSandhyaGanesh },
     { name: 'Smt. Nandini Kanbur', role: 'Cultural Committee Member', img: smtNandiniKanbur },
@@ -49,15 +43,13 @@ const OurTeam = () => {
     { name: 'Smt. Sujata Pattar', role: 'Cultural Committee Member', img: smtSujataPattar },
     { name: 'Smt. Rashmi Shetty', role: 'Cultural Committee Member', img: smtRashmiShetty },
     { name: 'Smt. Chennamma Hiremath', role: 'Cultural Committee Member', img: smtChennammaHiremath },
-    { name: 'Smt. Smitha Shirganavar', role: 'Cultural & Core Committee Member', img: smtSmithaShirganavar },
+    { name: 'Smt. Smitha Shirganavar', role: 'Cultural & Core Committee Member', img: smtSmithaShirgannavar },
     { name: 'Smt. Seema Prasad', role: 'Cultural Committee Member', img: smtSeemaPrasad },
     { name: 'Smt. Shailaja Kanavi', role: 'Cultural Committee Member', img: smtShailajaKanavi },
     { name: 'Smt. Dhaneshwari Patil', role: 'Cultural Committee Member', img: smtDhaneshwariPatil },
-    // If you add more images later, add them here
   ];
 
-  const seniorMembers = [
-    // Add senior members here when images available
+  const seniorMembers: Member[] = [
     // { name: 'Basavaraj Naik', role: 'Ex-President', img: basavarajNaik },
   ];
 
@@ -72,7 +64,9 @@ const OurTeam = () => {
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {coreTeam.length === 0 && (
-            <p className="text-center col-span-full text-gray-600">Core team photos coming soon.</p>
+            <p className="col-span-full text-center text-gray-600">
+              Core team members will be updated soon.
+            </p>
           )}
           {coreTeam.map((member, index) => (
             <div key={index} className="text-center">
@@ -111,7 +105,9 @@ const OurTeam = () => {
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           {seniorMembers.length === 0 && (
-            <p className="text-center col-span-full text-gray-600">Senior members will be added soon.</p>
+            <p className="col-span-full text-center text-gray-600">
+              Senior members will be added soon.
+            </p>
           )}
           {seniorMembers.map((member, index) => (
             <div key={index} className="text-center">
