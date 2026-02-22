@@ -9,6 +9,8 @@ import Kannada_Siri from './pages/Kannada_Siri';
 import Photos from './pages/Photos';
 import Updates from './pages/Updates';
 import Team from './pages/Team';
+import Contact from "./pages/contact";
+
 
 function App() {
   // in case you want to inspect environment later
@@ -31,6 +33,8 @@ function App() {
             <Route path="/photos" element={<Photos />} />
             <Route path="/updates" element={<Updates />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<Contact />} />
+
 
             {/* catch-all: redirect unknown routes back to home */}
             <Route path="*" element={<Navigate to="/home" replace />} />

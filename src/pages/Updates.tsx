@@ -1,5 +1,9 @@
 import React from 'react';
-import { Megaphone } from 'lucide-react'; // using a relevant icon for updates
+import { Megaphone } from 'lucide-react';
+
+// ✅ import your local images
+import saileshPatil from '../assets/sailesh-patil.jpg';
+import manjunathHadpad from '../assets/manjunath.jpg';
 
 const Updates = () => {
   return (
@@ -11,9 +15,9 @@ const Updates = () => {
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center mb-4">
             <img
-              src="https://images.unsplash.com/photo-1614287542760-27be3a2c2d2d?auto=format&fit=crop&w=1350&q=80"
+              src={saileshPatil}
               alt="Sailesh Patil"
-              className="w-12 h-12 rounded-full mr-4"
+              className="w-14 h-14 rounded-full mr-4 object-cover border-2 border-blue-200"
             />
             <div>
               <h3 className="text-xl font-semibold text-blue-800">Sailesh Patil</h3>
@@ -31,16 +35,16 @@ const Updates = () => {
           </p>
         </div>
 
-        {/* Update 2 - Pavan Hebbare */}
+        {/* Update 2 - Manjunath Hadpad */}
         <div className="bg-white rounded-lg shadow-md p-6">
           <div className="flex items-center mb-4">
             <img
-              src="https://images.unsplash.com/photo-1603415526960-f7e0328a1e8b?auto=format&fit=crop&w=1350&q=80"
-              alt="Pavan Hebbare"
-              className="w-12 h-12 rounded-full mr-4"
+              src={manjunathHadpad}
+              alt="Manjunath Hadpad"
+              className="w-14 h-14 rounded-full mr-4 object-cover border-2 border-blue-200"
             />
             <div>
-              <h3 className="text-xl font-semibold text-blue-800">Pavan Hebbare</h3>
+              <h3 className="text-xl font-semibold text-blue-800">Manjunath Hadpad</h3>
               <div className="flex text-green-600 items-center gap-2">
                 <Megaphone size={18} />
                 <span className="font-medium">Sustainable Initiatives</span>

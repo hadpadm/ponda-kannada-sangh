@@ -10,11 +10,11 @@ const About = () => {
           <h2 className="text-2xl font-semibold text-blue-800 mb-4">Who We Are</h2>
           <p className="text-blue-600 leading-relaxed">
 In the heart of Goa, where languages and cultures meet, a few Kannadiga hearts beat in unison.
-It was 1986 — when a handful of visionaries, each contributing just ₹10, planted the seed of what would one day become the Ponda Kannada Sangha.
+It was 1978 - when a handful of visionaries, each contributing just ₹10, planted the seed of what would one day become the Ponda Kannada Sangha.
 
 There were no grand meetings or feasts back then — only vadapav, chai, and endless discussions about keeping Kannada alive. Using letters through postmen and simple phone calls, people were invited, gathered, and united by one dream — to keep the Kannada language and spirit thriving in Goa.
 
-Guided by devoted elders like Shri Hiremath, Renke Saheb, and later Badiger Sir, the Sangha grew from a humble gathering into a proud cultural organization.
+Guided by devoted elders like Shri Hiremath, Renake Saheb, and later Badiger Sir, the Sangha grew from a humble gathering into a proud cultural organization.
 From small halls to Goa Doordarshan appearances, and from early cultural meets to hosting Karnataka Kala Mattu Samskruti events — the journey was both poetic and powerful.
 
 Voices like Vrunda Vishwanathan and Dandin Sir added color and grace to those early programs.
