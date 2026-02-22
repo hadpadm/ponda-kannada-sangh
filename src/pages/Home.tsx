@@ -26,7 +26,7 @@ import hero15 from '../assets/hero_banner15.jpg';
 import upadte from '../assets/upadtes.jpg';
 import collagee from '../assets/collage.jpg';
 
-const images = [hero1, hero2, hero3, hero4, hero5, hero6, hero7, hero8, hero9, hero10, hero11, hero12, hero13, hero14, hero15];
+const images = [hero1, hero2, hero9, hero10, hero11, hero12, hero13, hero14, hero15,hero3, hero4, hero5, hero6, hero7, hero9, hero10, hero11, hero12, hero13, hero14, hero15];
 
 const Home: React.FC = () => {
   return (
@@ -34,7 +34,7 @@ const Home: React.FC = () => {
       {/* =============== HERO SLIDER =============== */}
 <Swiper
   modules={[Autoplay, EffectFade]}
-  autoplay={{ delay: 3500, disableOnInteraction: false }}
+  autoplay={{ delay: 2500, disableOnInteraction: false }}
   effect="fade"
   loop={true}
   className="relative"
